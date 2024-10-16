@@ -25,3 +25,7 @@ fmt-check:
 audit:
 	cargo install cargo-audit
 	cargo audit
+
+deps:
+	cargo add actix-web@4
+	cargo add tokio@1 --features macros,rt-multi-thread
